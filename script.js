@@ -73,4 +73,3 @@ if (mobileMenuBtn && navMenu) {
         navMenu.classList.toggle('active');
     });
 }
-}
