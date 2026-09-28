@@ -137,23 +137,15 @@ header {
 .fanciful-logo {
     font-family: 'Playfair Display', serif !important;
     font-style: italic !important;
-    font-size: 36px !important;
-    font-weight: 700 !important;
+    font-size: 46px !important;
+    font-weight: 900 !important;
     letter-spacing: 1px;
     display: inline-block;
-    animation: textMotion 3s ease-in-out infinite;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-}
-
-@keyframes textMotion {
-    0%, 100% {
-        transform: scale(1) translateY(0);
-        color: var(--primary-color);
-    }
-    50% {
-        transform: scale(1.05) translateY(-5px);
-        color: var(--primary-light);
-    }
+    color: var(--primary-color);
+    text-shadow: 1px 1px 0 #39796b,
+                 2px 2px 0 #39796b,
+                 3px 3px 0 #00251a,
+                 4px 4px 6px rgba(0,0,0,0.4);
 }
 
 nav ul {
@@ -710,6 +702,12 @@ nav a:hover {
 .float-icon-4 { top: 75%; right: 10%; font-size: 6rem !important; animation-delay: 3s !important; }
 .float-icon-5 { top: 40%; left: 50%; font-size: 3.5rem !important; animation-delay: 4s !important; }
 .float-icon-6 { top: 85%; left: 40%; font-size: 4rem !important; animation-delay: 5s !important; }
+.float-icon-7 { top: 10%; left: 80%; font-size: 3rem !important; animation-delay: 0.5s !important; }
+.float-icon-8 { top: 70%; left: 60%; font-size: 5rem !important; animation-delay: 1.5s !important; }
+.float-icon-9 { top: 90%; right: 20%; font-size: 4rem !important; animation-delay: 2.5s !important; }
+.float-icon-10 { top: 30%; left: 30%; font-size: 3.5rem !important; animation-delay: 3.5s !important; }
+.float-icon-11 { top: 50%; right: 40%; font-size: 5rem !important; animation-delay: 4.5s !important; }
+.float-icon-12 { top: 20%; right: 40%; font-size: 3rem !important; animation-delay: 5.5s !important; }
 
 @keyframes floatRandom {
     0%, 100% { transform: translate(0, 0) rotate(0deg); }
