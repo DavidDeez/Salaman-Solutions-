@@ -161,15 +161,11 @@ header {
 
 .fanciful-logo {
     font-family: 'Playfair Display', serif !important;
-    font-style: italic !important;
     font-size: 32px !important;
-    font-weight: 800 !important;
+    font-weight: 700 !important;
     letter-spacing: 1px;
     display: inline-block;
     color: var(--primary-color);
-    text-shadow: 1px 1px 0 #39796b,
-                 2px 2px 0 #00251a,
-                 3px 3px 5px rgba(0,0,0,0.3);
 }
 
 nav ul {
