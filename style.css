@@ -1092,14 +1092,36 @@ body.dark-mode .trust-bar { border-bottom: 1px solid #334155; }
         left: 0;
         width: 100%;
         background-color: var(--bg-white);
-        padding: 20px 0;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        padding: 0;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
         text-align: center;
-        gap: 15px;
+        gap: 0;
+        border-radius: 0 0 15px 15px;
+        overflow: hidden;
     }
 
     nav ul.active {
         display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        border-bottom: 1px solid rgba(0,0,0,0.05);
+    }
+    
+    body.dark-mode nav ul li {
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+    }
+
+    nav ul li:last-child {
+        border-bottom: none;
+        padding: 15px 0;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 15px 0;
+        font-size: 18px;
     }
     
     .mobile-menu {
