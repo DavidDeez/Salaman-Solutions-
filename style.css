@@ -888,6 +888,7 @@ footer {
     display: inline-flex;
     white-space: nowrap;
     animation: ticker 30s linear infinite;
+    width: max-content;
 }
 
 .ticker:hover {
