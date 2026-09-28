@@ -1082,6 +1082,11 @@ body.dark-mode .trust-bar { border-bottom: 1px solid #334155; }
 }
 
 @media (max-width: 768px) {
+    header {
+        position: sticky;
+        top: 0;
+    }
+    
     .section-padding {
         padding: 50px 0;
     }
