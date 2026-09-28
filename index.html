@@ -146,61 +146,57 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section (Inquiry Design) -->
     <section id="contact" class="contact section-padding bg-light">
         <div class="container">
-            <div class="section-header text-center">
-                <h3>Get In Touch</h3>
-                <div class="divider center-divider"></div>
-                <p>Ready to take control of your financial future? Contact us today.</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Office Location</h4>
-                            <p>Lagos, Nigeria (Serving clients globally)</p>
+            <div class="inquiry-grid">
+                
+                <!-- Info -->
+                <div class="inquiry-info">
+                    <h2 class="inquiry-title">Register <em>today.</em></h2>
+                    <p class="inquiry-subtitle">Whether you need financial advisory, wealth management, or stock analysis, our doors are open. Visit our office or send us a message below.</p>
+                    
+                    <div class="inquiry-details">
+                        <div class="detail-group">
+                            <h4 class="detail-label">Location</h4>
+                            <p class="detail-text">Lagos, Nigeria (Serving clients globally)</p>
                         </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email Us</h4>
-                            <p>consult@salamansolutions.com</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-phone-alt"></i>
-                        <div>
-                            <h4>Call Us</h4>
-                            <p>+234 (0) XXX XXX XXXX</p>
+                        <div class="detail-group">
+                            <h4 class="detail-label">Direct Line & WhatsApp</h4>
+                            <p class="detail-text">+234 (0) XXX XXX XXXX</p>
+                            <a href="https://wa.me/2340000000000" target="_blank" rel="noreferrer" class="whatsapp-link">
+                                <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
+
+                <!-- Form -->
+                <div class="inquiry-form-container">
+                    <h3 class="form-title">Send an Inquiry</h3>
+                    <form action="#" method="POST" class="inquiry-form">
+                        
+                        <div class="form-group-modern">
+                            <label>Full Name</label>
+                            <input type="text" name="name" required placeholder="Enter your name">
                         </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
+                        
+                        <div class="form-group-modern">
+                            <label>Email Address</label>
+                            <input type="email" name="email" required placeholder="Enter your email">
                         </div>
-                        <div class="form-group">
-                            <select required>
-                                <option value="" disabled selected>Area of Interest</option>
-                                <option value="ngx">Nigerian Stocks (NGX)</option>
-                                <option value="diaspora">Diaspora Investment</option>
-                                <option value="wealth">Wealth Management</option>
-                                <option value="advisory">General Advisory</option>
-                            </select>
+
+                        <div class="form-group-modern">
+                            <label>Your Message</label>
+                            <textarea name="message" required rows="4" placeholder="How can we help you?"></textarea>
                         </div>
-                        <div class="form-group">
-                            <textarea rows="4" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn-primary">Send Message</button>
+
+                        <button type="submit" class="btn-submit-modern">
+                            Submit Inquiry <i class="fas fa-arrow-right"></i>
+                        </button>
                     </form>
                 </div>
+
             </div>
         </div>
     </section>
@@ -235,6 +231,12 @@
             <p>&copy; 2026 Salaman Solutions. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/2340000000000" target="_blank" rel="noreferrer" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
+        <img src="whatsapp_3d.png" alt="WhatsApp" class="whatsapp-icon">
+        <span class="whatsapp-tooltip hidden-mobile">Need help? Chat with us!</span>
+    </a>
 
     <script src="script.js"></script>
 </body>
