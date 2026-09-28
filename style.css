@@ -789,6 +789,223 @@ footer {
     font-size: 14px;
 }
 
+/* Dark Mode Variables & Logic */
+body.dark-mode {
+    --bg-light: #0f172a;
+    --bg-white: #1e293b;
+    --text-dark: #f8fafc;
+    --text-muted: #cbd5e1;
+    --primary-dark: #f8fafc;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+}
+
+body.dark-mode header {
+    background-color: #0f172a;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+}
+
+body.dark-mode .nav ul li a, body.dark-mode .mobile-menu {
+    color: #f8fafc;
+}
+
+body.dark-mode .fanciful-logo {
+    color: #f8fafc;
+    text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000;
+}
+
+.theme-toggle-btn {
+    background: none;
+    border: none;
+    color: var(--primary-color);
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.theme-toggle-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Market Ticker */
+.ticker-wrap {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000;
+    color: #fff;
+    padding: 8px 0;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: var(--font-body);
+}
+
+.ticker {
+    display: inline-flex;
+    white-space: nowrap;
+    animation: ticker 30s linear infinite;
+}
+
+.ticker:hover {
+    animation-play-state: paused;
+}
+
+.ticker-item {
+    padding: 0 2rem;
+    font-weight: 500;
+}
+
+.text-green { color: #10b981; }
+.text-red { color: #ef4444; }
+
+@keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-50%, 0, 0); }
+}
+
+/* Trust Bar */
+.trust-bar {
+    padding: 20px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+body.dark-mode .trust-bar { border-bottom: 1px solid #334155; }
+
+.trust-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.trust-container p {
+    font-weight: 700;
+    color: var(--text-muted);
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+.trust-logos {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.trust-logos span {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-dark);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+.trust-logos span:hover { opacity: 1; }
+
+/* Testimonials */
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.testimonial-card {
+    background: var(--bg-white);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    position: relative;
+}
+
+.quote-icon {
+    font-size: 40px;
+    color: var(--primary-light);
+    opacity: 0.2;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: var(--text-dark);
+}
+
+.client-info h4 {
+    color: var(--primary-dark);
+    margin-bottom: 5px;
+}
+
+.client-info span {
+    font-size: 12px;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Insights */
+.insights-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.insight-card {
+    background: var(--bg-white);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.insight-card:hover { transform: translateY(-10px); }
+
+.insight-img {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.insight-content { padding: 25px; }
+
+.insight-date {
+    font-size: 12px;
+    color: var(--accent-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.insight-content h4 {
+    font-size: 20px;
+    color: var(--primary-dark);
+    margin-bottom: 15px;
+}
+
+.insight-content p {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+}
+
+.read-more {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--primary-dark);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.read-more:hover { color: var(--accent-color); }
+
 /* Responsive Design */
 @media (max-width: 992px) {
     .hero h2 {

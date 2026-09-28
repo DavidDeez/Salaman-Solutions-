@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
 
@@ -24,10 +26,33 @@
                     <li><a href="#services">Expertise</a></li>
                     <li><a href="#calculator">Wealth Calculator</a></li>
                     <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+                    <li>
+                        <button id="theme-toggle" aria-label="Toggle Dark Mode" class="theme-toggle-btn">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
                 </ul>
             </nav>
             <div class="mobile-menu">
                 <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <!-- Market Ticker -->
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> NGX-ASI: 104,562.06 (+1.2%)</div>
+                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> DANGCEM: ₦763.00 (+0.5%)</div>
+                <div class="ticker-item"><i class="fas fa-arrow-down text-red"></i> MTNN: ₦280.50 (-0.2%)</div>
+                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> ZENITHBANK: ₦42.10 (+2.1%)</div>
+                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> SEPLAT: ₦3,310.00 (+1.8%)</div>
+                <div class="ticker-item"><i class="fas fa-arrow-down text-red"></i> GTCO: ₦48.95 (-0.5%)</div>
+                <!-- Duplicate for seamless scroll -->
+                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> NGX-ASI: 104,562.06 (+1.2%)</div>
+                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> DANGCEM: ₦763.00 (+0.5%)</div>
+                <div class="ticker-item"><i class="fas fa-arrow-down text-red"></i> MTNN: ₦280.50 (-0.2%)</div>
+                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> ZENITHBANK: ₦42.10 (+2.1%)</div>
+                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> SEPLAT: ₦3,310.00 (+1.8%)</div>
+                <div class="ticker-item"><i class="fas fa-arrow-down text-red"></i> GTCO: ₦48.95 (-0.5%)</div>
             </div>
         </div>
     </header>
@@ -49,17 +74,30 @@
             <i class="fas fa-landmark float-icon-12"></i>
         </div>
         <div class="hero-overlay"></div>
-        <div class="container hero-content">
+        <div class="container hero-content" data-aos="fade-up" data-aos-duration="1000">
             <h2>Building Generational Wealth Through Nigerian Markets</h2>
             <p>Expert Financial Advisory & Wealth Management for Nigerians at Home and in the Diaspora. Guiding your financial journey since 2007.</p>
             <a href="#contact" class="btn-primary">Book a Consultation Today</a>
         </div>
     </section>
 
+    <!-- Trust Badge Bar -->
+    <div class="trust-bar bg-light">
+        <div class="container trust-container">
+            <p>Trusted & Recognized By</p>
+            <div class="trust-logos">
+                <span><i class="fas fa-building-columns"></i> SEC Nigeria</span>
+                <span><i class="fas fa-chart-bar"></i> NGX Exchange</span>
+                <span><i class="fas fa-shield-halved"></i> SIPC Insured</span>
+                <span><i class="fas fa-globe"></i> Diaspora Partners</span>
+            </div>
+        </div>
+    </div>
+
     <!-- About Section -->
     <section id="about" class="about section-padding">
         <div class="container about-container">
-            <div class="about-text">
+            <div class="about-text" data-aos="fade-right" data-aos-duration="1000">
                 <h3>Meet Mr. Olukayode Salaman</h3>
                 <div class="divider"></div>
                 <p>With over a decade and a half of dedicated experience since 2007, Mr. Olukayode Salaman has established himself as a premier Financial Advisor and Wealth Manager based in Ibadan.</p>
@@ -81,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about-image">
+            <div class="about-image" data-aos="fade-left" data-aos-duration="1000">
                 <div class="image-placeholder">
                     <!-- Replace with actual professional photo -->
                     <i class="fas fa-user-tie fa-7x"></i>
@@ -93,28 +131,28 @@
     <!-- Services Section -->
     <section id="services" class="services section-padding bg-light">
         <div class="container">
-            <div class="section-header text-center">
+            <div class="section-header text-center" data-aos="fade-up">
                 <h3>Areas of Expertise</h3>
                 <div class="divider center-divider"></div>
                 <p>Comprehensive financial solutions tailored to the Nigerian economic landscape.</p>
             </div>
             <div class="services-grid">
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
                     <i class="fas fa-chart-line service-icon floating-icon"></i>
                     <h4>Nigerian Stocks (NGX)</h4>
                     <p>In-depth analysis, stock selection, and portfolio management on the Nigerian Stock Exchange to maximize your returns.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
                     <i class="fas fa-globe service-icon floating-icon" style="animation-delay: 0.5s;"></i>
                     <h4>Diaspora Investment</h4>
                     <p>Secure, transparent, and high-yield investment pathways for Nigerians living abroad wanting to invest in the local economy.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
                     <i class="fas fa-hand-holding-dollar service-icon floating-icon" style="animation-delay: 1s;"></i>
                     <h4>Wealth Management</h4>
                     <p>Holistic strategies for asset allocation, risk management, and long-term wealth preservation across generations.</p>
                 </div>
-                <div class="service-card">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
                     <i class="fas fa-comments-dollar service-icon floating-icon" style="animation-delay: 1.5s;"></i>
                     <h4>Financial Advisory</h4>
                     <p>Personalized consulting to help you make informed decisions on personal finance, retirement planning, and corporate investments.</p>
@@ -123,10 +161,39 @@
         </div>
     </section>
 
-    <!-- Interactive Element: Simple Investment Calculator -->
-    <section id="calculator" class="calculator-section section-padding">
+    <!-- Testimonials Section -->
+    <section class="testimonials section-padding">
         <div class="container">
-            <div class="calculator-wrapper">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h3>Client Success Stories</h3>
+                <div class="divider center-divider"></div>
+                <p>Don't just take our word for it. See what our investors have to say.</p>
+            </div>
+            <div class="testimonial-grid">
+                <div class="testimonial-card" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"Mr. Salaman's deep understanding of the NGX helped me secure a retirement portfolio I thought was impossible. His advisory is unmatched in Ibadan."</p>
+                    <div class="client-info">
+                        <h4>Adebayo T.</h4>
+                        <span>Local Investor</span>
+                    </div>
+                </div>
+                <div class="testimonial-card" data-aos="flip-left" data-aos-delay="300">
+                    <i class="fas fa-quote-left quote-icon"></i>
+                    <p>"Investing back home from the UK was always risky until I found Salaman Solutions. The transparency and yields have been fantastic."</p>
+                    <div class="client-info">
+                        <h4>Dr. Chika O.</h4>
+                        <span>Diaspora Investor (UK)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Element: Simple Investment Calculator -->
+    <section id="calculator" class="calculator-section section-padding bg-light">
+        <div class="container">
+            <div class="calculator-wrapper" data-aos="zoom-in">
                 <div class="calc-info">
                     <h3>Project Your Wealth</h3>
                     <p>Use our interactive calculator to see how consistent investments in the Nigerian market can grow your wealth over time.</p>
@@ -161,13 +228,53 @@
         </div>
     </section>
 
+    <!-- Market Insights Section -->
+    <section class="insights section-padding">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <h3>Latest Market Insights</h3>
+                <div class="divider center-divider"></div>
+                <p>Stay ahead with our expert analysis on the Nigerian economy and global markets.</p>
+            </div>
+            <div class="insights-grid">
+                <article class="insight-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="insight-img" style="background-image: url('https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="insight-content">
+                        <span class="insight-date">Oct 12, 2026</span>
+                        <h4>Navigating the NGX in Q4</h4>
+                        <p>Key strategies for positioning your portfolio ahead of end-of-year dividend announcements...</p>
+                        <a href="#" class="read-more">Read Full Analysis <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="insight-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="insight-img" style="background-image: url('https://images.unsplash.com/photo-1579532537598-459ecdaf39cc?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="insight-content">
+                        <span class="insight-date">Sep 28, 2026</span>
+                        <h4>Diaspora Investment Guide</h4>
+                        <p>How Nigerians abroad can securely and profitably funnel funds into local high-yield bonds...</p>
+                        <a href="#" class="read-more">Read Full Analysis <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="insight-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="insight-img" style="background-image: url('https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <div class="insight-content">
+                        <span class="insight-date">Sep 15, 2026</span>
+                        <h4>The Tech Boom in Nigeria</h4>
+                        <p>Analyzing tech IPOs on the NGX and evaluating long-term growth prospects for early investors...</p>
+                        <a href="#" class="read-more">Read Full Analysis <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section (Inquiry Design) -->
     <section id="contact" class="contact section-padding bg-light">
         <div class="container">
             <div class="inquiry-grid">
                 
                 <!-- Info -->
-                <div class="inquiry-info">
+                <div class="inquiry-info" data-aos="fade-right">
                     <h2 class="inquiry-title">Register <em>today.</em></h2>
                     <p class="inquiry-subtitle">Whether you need financial advisory, wealth management, or stock analysis, our doors are open. Visit our office or send us a message below.</p>
                     
@@ -198,7 +305,7 @@
                 </div>
 
                 <!-- Form -->
-                <div class="inquiry-form-container">
+                <div class="inquiry-form-container" data-aos="fade-left">
                     <h3 class="form-title">Send an Inquiry</h3>
                     <form action="#" method="POST" class="inquiry-form">
                         
@@ -262,11 +369,20 @@
     </footer>
 
     <!-- Floating WhatsApp -->
-    <a href="https://wa.me/2340000000000" target="_blank" rel="noreferrer" class="floating-whatsapp" aria-label="Chat with us on WhatsApp">
+    <a href="https://wa.me/2340000000000" target="_blank" rel="noreferrer" class="floating-whatsapp" aria-label="Chat with us on WhatsApp" data-aos="zoom-in" data-aos-anchor-placement="top-bottom">
         <img src="whatsapp_3d.png" alt="WhatsApp" class="whatsapp-icon">
         <span class="whatsapp-tooltip hidden-mobile">Need help? Chat with us!</span>
     </a>
 
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 50,
+            duration: 800,
+        });
+    </script>
     <script src="script.js"></script>
 </body>
 </html>
