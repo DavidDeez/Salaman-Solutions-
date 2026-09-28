@@ -137,8 +137,22 @@ header {
 .fanciful-logo {
     font-family: 'Great Vibes', cursive !important;
     font-size: 42px !important;
-    font-weight: 400 !important;
+    font-weight: 700 !important;
     letter-spacing: 1px;
+    display: inline-block;
+    animation: textMotion 3s ease-in-out infinite;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+}
+
+@keyframes textMotion {
+    0%, 100% {
+        transform: scale(1) translateY(0);
+        color: var(--primary-color);
+    }
+    50% {
+        transform: scale(1.05) translateY(-5px);
+        color: var(--primary-light);
+    }
 }
 
 nav ul {
