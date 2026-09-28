@@ -55,6 +55,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             targetElement.scrollIntoView({
                 behavior: 'smooth'
             });
+            // Close mobile menu if open
+            const navMenu = document.querySelector('nav ul');
+            if (navMenu.classList.contains('active')) {
+                navMenu.classList.remove('active');
+            }
         }
     });
 });
+
+// Mobile menu toggle
+const mobileMenuBtn = document.querySelector('.mobile-menu');
+const navMenu = document.querySelector('nav ul');
+
+if (mobileMenuBtn && navMenu) {
+    mobileMenuBtn.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+    });
+}
