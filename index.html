@@ -389,6 +389,31 @@
             duration: 800,
         });
     </script>
+    
+    <!-- Vanilla Tilt JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".service-card"), {
+            max: 10,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.2
+        });
+        
+        VanillaTilt.init(document.querySelectorAll(".insight-card"), {
+            max: 5,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.1
+        });
+
+        VanillaTilt.init(document.querySelectorAll(".calc-form-area"), {
+            max: 2,
+            speed: 400,
+            perspective: 1000
+        });
+    </script>
+    
     <script src="script.js"></script>
 </body>
 </html>
