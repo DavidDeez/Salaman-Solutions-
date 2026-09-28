@@ -1158,4 +1158,14 @@ body.dark-mode .trust-bar { border-bottom: 1px solid #334155; }
     .logo img, .footer-logo img {
         height: 40px !important;
     }
+    
+    .ticker-item {
+        padding: 0 1rem;
+        font-size: 12px;
+    }
+    
+    .trust-container {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
