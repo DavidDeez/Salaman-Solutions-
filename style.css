@@ -1,9 +1,9 @@
 /* Root Variables */
 :root {
-    --primary-color: #1a365d; /* Modern navy blue */
-    --primary-light: #2b6cb0;
-    --primary-dark: #0f172a;
-    --accent-color: #38bdf8; /* Modern blue accent instead of generic gold */
+    --primary-color: #004d40; /* Deep green, reflecting growth/wealth/Nigeria */
+    --primary-light: #39796b;
+    --primary-dark: #00251a;
+    --accent-color: #d4af37; /* Gold, reflecting wealth/quality */
     --text-dark: #1e293b;
     --text-light: #f8fafc;
     --text-muted: #64748b;
@@ -110,7 +110,7 @@ ul {
     background-color: var(--primary-light);
     color: var(--text-light);
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(26, 54, 93, 0.2);
+    box-shadow: 0 4px 12px rgba(0, 77, 64, 0.2);
 }
 
 /* Header & Navigation */
@@ -188,7 +188,7 @@ nav a:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(26, 54, 93, 0.7));
+    background: linear-gradient(to right, rgba(0, 37, 26, 0.9), rgba(0, 77, 64, 0.7));
 }
 
 .hero-content {
