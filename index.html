@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr. Olukayode Salaman | Financial Advisor & Wealth Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <h1>Salaman Wealth</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Expertise</a></li>
+                    <li><a href="#calculator">Wealth Calculator</a></li>
+                    <li><a href="#contact" class="btn-nav">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2>Building Generational Wealth Through Nigerian Markets</h2>
+            <p>Expert Financial Advisory & Wealth Management for Nigerians at Home and in the Diaspora. Guiding your financial journey since 2007.</p>
+            <a href="#contact" class="btn-primary">Book a Consultation Today</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container about-container">
+            <div class="about-text">
+                <h3>Meet Mr. Olukayode Salaman</h3>
+                <div class="divider"></div>
+                <p>With over a decade and a half of dedicated experience since 2007, Mr. Olukayode Salaman has established himself as a premier Financial Advisor and Wealth Manager.</p>
+                <p>His deep-rooted expertise lies in the dynamic Nigerian Stock Exchange (NGX). He has successfully navigated market complexities to deliver robust portfolios for a diverse clientele.</p>
+                <p>Whether you are based in Nigeria or are part of the vibrant Diaspora looking to invest back home safely and profitably, Mr. Salaman provides tailored, strategic insights to secure and grow your financial future.</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <h4>2007</h4>
+                        <p>Established</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>NGX</h4>
+                        <p>Market Expert</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>Global</h4>
+                        <p>Diaspora Focused</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <div class="image-placeholder">
+                    <!-- Replace with actual professional photo -->
+                    <i class="fas fa-user-tie fa-7x"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h3>Areas of Expertise</h3>
+                <div class="divider center-divider"></div>
+                <p>Comprehensive financial solutions tailored to the Nigerian economic landscape.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-chart-line service-icon"></i>
+                    <h4>Nigerian Stocks (NGX)</h4>
+                    <p>In-depth analysis, stock selection, and portfolio management on the Nigerian Stock Exchange to maximize your returns.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-globe service-icon"></i>
+                    <h4>Diaspora Investment</h4>
+                    <p>Secure, transparent, and high-yield investment pathways for Nigerians living abroad wanting to invest in the local economy.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-hand-holding-dollar service-icon"></i>
+                    <h4>Wealth Management</h4>
+                    <p>Holistic strategies for asset allocation, risk management, and long-term wealth preservation across generations.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-comments-dollar service-icon"></i>
+                    <h4>Financial Advisory</h4>
+                    <p>Personalized consulting to help you make informed decisions on personal finance, retirement planning, and corporate investments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Element: Simple Investment Calculator -->
+    <section id="calculator" class="calculator-section section-padding">
+        <div class="container">
+            <div class="calculator-wrapper">
+                <div class="calc-info">
+                    <h3>Project Your Wealth</h3>
+                    <p>Use our interactive calculator to see how consistent investments in the Nigerian market can grow your wealth over time.</p>
+                    <p><em>*Note: This is an estimation tool. Actual market returns fluctuate.</em></p>
+                </div>
+                <div class="calc-form-area">
+                    <form id="wealth-calculator" onsubmit="return false;">
+                        <div class="form-group">
+                            <label for="initial-investment">Initial Investment (₦)</label>
+                            <input type="number" id="initial-investment" value="1000000" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="monthly-contribution">Monthly Contribution (₦)</label>
+                            <input type="number" id="monthly-contribution" value="50000" min="0">
+                        </div>
+                        <div class="form-group">
+                            <label for="years">Investment Period (Years)</label>
+                            <input type="number" id="years" value="10" min="1" max="50">
+                        </div>
+                        <div class="form-group">
+                            <label for="interest-rate">Expected Annual Return (%)</label>
+                            <input type="number" id="interest-rate" value="12" min="1" max="100">
+                        </div>
+                        <button class="btn-primary w-100" onclick="calculateWealth()">Calculate Future Value</button>
+                    </form>
+                    <div id="calc-result" class="calc-result hidden">
+                        <h4>Estimated Future Value:</h4>
+                        <h2 id="result-amount">₦0</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding bg-light">
+        <div class="container">
+            <div class="section-header text-center">
+                <h3>Get In Touch</h3>
+                <div class="divider center-divider"></div>
+                <p>Ready to take control of your financial future? Contact us today.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Office Location</h4>
+                            <p>Lagos, Nigeria (Serving clients globally)</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email Us</h4>
+                            <p>consult@salamansolutions.com</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone-alt"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+234 (0) XXX XXX XXXX</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Area of Interest</option>
+                                <option value="ngx">Nigerian Stocks (NGX)</option>
+                                <option value="diaspora">Diaspora Investment</option>
+                                <option value="wealth">Wealth Management</option>
+                                <option value="advisory">General Advisory</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <h2>Salaman Wealth</h2>
+                <p>Guiding Wealth. Securing Futures.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-disclaimer">
+                <h4>Disclaimer</h4>
+                <p>Investing involves risk, including possible loss of principal. Past performance is no guarantee of future results. Information provided is for educational purposes and should not be considered personalized financial advice.</p>
+            </div>
+        </div>
+        <div class="footer-bottom text-center">
+            <p>&copy; 2026 Salaman Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
