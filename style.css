@@ -1319,8 +1319,22 @@ body.dark-mode .trust-bar { border-bottom: 1px solid #334155; }
         scroll-snap-align: center;
     }
 
-    .footer-logo div {
-        justify-content: center;
+    .footer-links {
+        display: none;
+    }
+    
+    footer {
+        padding-top: 20px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .footer-disclaimer p {
+        font-size: 11px;
     }
     
     .pta-headline {
