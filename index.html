@@ -14,25 +14,6 @@
 
     <!-- Header / Navigation -->
     <header>
-        <!-- Market Ticker -->
-        <div class="ticker-wrap">
-            <div class="ticker">
-                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> NGX-ASI: 104,562.06 (+1.2%)</div>
-                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> DANGCEM: ₦763.00 (+0.5%)</div>
-                <div class="ticker-item"><i class="fas fa-arrow-down text-red"></i> MTNN: ₦280.50 (-0.2%)</div>
-                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> ZENITHBANK: ₦42.10 (+2.1%)</div>
-                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> SEPLAT: ₦3,310.00 (+1.8%)</div>
-                <div class="ticker-item"><i class="fas fa-arrow-down text-red"></i> GTCO: ₦48.95 (-0.5%)</div>
-                <!-- Duplicate for seamless scroll -->
-                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> NGX-ASI: 104,562.06 (+1.2%)</div>
-                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> DANGCEM: ₦763.00 (+0.5%)</div>
-                <div class="ticker-item"><i class="fas fa-arrow-down text-red"></i> MTNN: ₦280.50 (-0.2%)</div>
-                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> ZENITHBANK: ₦42.10 (+2.1%)</div>
-                <div class="ticker-item"><i class="fas fa-arrow-up text-green"></i> SEPLAT: ₦3,310.00 (+1.8%)</div>
-                <div class="ticker-item"><i class="fas fa-arrow-down text-red"></i> GTCO: ₦48.95 (-0.5%)</div>
-            </div>
-        </div>
-
         <div class="container header-container">
             <div class="logo" style="display: flex; align-items: center; gap: 15px;">
                 <img src="logo.png" alt="Salaman Solutions Logo" style="height: 70px; border-radius: 8px; box-shadow: 3px 3px 8px rgba(0,0,0,0.4), -1px -1px 2px rgba(255,255,255,0.1);">
@@ -51,29 +32,40 @@
                 <i class="fas fa-bars"></i>
             </div>
         </div>
+        
+        <!-- PTA Style Solid Task Bar -->
+        <a href="#calculator" class="pta-taskbar">
+            <i class="fas fa-book-open"></i> TAP TO ACCESS CALCULATOR <i class="fas fa-chevron-right" style="margin-left: 5px;"></i>
+        </a>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero relative">
-        <div class="floating-bg-icons">
-            <i class="fas fa-money-bill-wave float-icon-1"></i>
-            <i class="fas fa-coins float-icon-2"></i>
-            <i class="fas fa-chart-line float-icon-3"></i>
-            <i class="fas fa-hand-holding-dollar float-icon-4"></i>
-            <i class="fas fa-wallet float-icon-5"></i>
-            <i class="fas fa-piggy-bank float-icon-6"></i>
-            <i class="fas fa-gem float-icon-7"></i>
-            <i class="fas fa-vault float-icon-8"></i>
-            <i class="fas fa-money-check-alt float-icon-9"></i>
-            <i class="fas fa-chart-pie float-icon-10"></i>
-            <i class="fas fa-sack-dollar float-icon-11"></i>
-            <i class="fas fa-landmark float-icon-12"></i>
+    <section id="home" class="hero pta-hero">
+        <div class="hero-icons">
+            <i class="fas fa-money-bill-wave float-icon-1 pta-watermark"></i>
+            <i class="fas fa-coins float-icon-2 pta-watermark"></i>
+            <i class="fas fa-chart-line float-icon-3 pta-watermark"></i>
+            <i class="fas fa-hand-holding-dollar float-icon-4 pta-watermark"></i>
+            <i class="fas fa-wallet float-icon-5 pta-watermark"></i>
+            <i class="fas fa-piggy-bank float-icon-6 pta-watermark"></i>
+            <i class="fas fa-gem float-icon-7 pta-watermark"></i>
+            <i class="fas fa-vault float-icon-8 pta-watermark"></i>
+            <i class="fas fa-money-check-alt float-icon-9 pta-watermark"></i>
+            <i class="fas fa-chart-pie float-icon-10 pta-watermark"></i>
+            <i class="fas fa-sack-dollar float-icon-11 pta-watermark"></i>
+            <i class="fas fa-landmark float-icon-12 pta-watermark"></i>
         </div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-content" data-aos="fade-up" data-aos-duration="1000">
-            <h2>Building Generational Wealth Through Nigerian Markets</h2>
-            <p>Expert Financial Advisory & Wealth Management for Nigerians at Home and in the Diaspora. Guiding your financial journey since 2007.</p>
-            <a href="#contact" class="btn-primary">Book a Consultation Today</a>
+        
+        <div class="container hero-content pta-hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <div class="pta-badge">
+                <span class="dot"></span> Now Accepting New Clients &rarr;
+            </div>
+            <h2 class="pta-headline">Dedicated Advisory for<br><span class="pta-font">Salaman Solutions.</span></h2>
+            <p class="pta-subtext">We are a dedicated financial centre. We provide focused, intensive advisory in all Nigerian Market sectors, ensuring every client masters their wealth.</p>
+            <div class="pta-buttons">
+                <a href="#contact" class="btn-pta-solid">JOIN OUR CLIENTS &rarr;</a>
+                <a href="#services" class="btn-pta-outline">VIEW EXPERTISE</a>
+            </div>
         </div>
     </section>
 
