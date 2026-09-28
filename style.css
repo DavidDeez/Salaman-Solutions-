@@ -891,4 +891,13 @@ footer {
     .hidden-mobile {
         display: none !important;
     }
+
+    .fanciful-logo {
+        font-size: 26px !important;
+        text-shadow: 1px 1px 0 #39796b, 2px 2px 3px rgba(0,0,0,0.4);
+    }
+
+    .logo img, .footer-logo img {
+        height: 40px !important;
+    }
 }
