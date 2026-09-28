@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mr. Olukayode Salaman | Financial Advisor & Wealth Manager</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500;700&family=Great+Vibes&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -14,7 +14,7 @@
     <header>
         <div class="container header-container">
             <div class="logo">
-                <h1>Salaman Solutions</h1>
+                <h1 class="fanciful-logo">Salaman Solutions</h1>
             </div>
             <nav>
                 <ul>
@@ -32,7 +32,15 @@
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero relative">
+        <div class="floating-bg-icons">
+            <i class="fas fa-money-bill-wave float-icon-1"></i>
+            <i class="fas fa-coins float-icon-2"></i>
+            <i class="fas fa-chart-line float-icon-3"></i>
+            <i class="fas fa-hand-holding-dollar float-icon-4"></i>
+            <i class="fas fa-wallet float-icon-5"></i>
+            <i class="fas fa-piggy-bank float-icon-6"></i>
+        </div>
         <div class="hero-overlay"></div>
         <div class="container hero-content">
             <h2>Building Generational Wealth Through Nigerian Markets</h2>
@@ -47,7 +55,7 @@
             <div class="about-text">
                 <h3>Meet Mr. Olukayode Salaman</h3>
                 <div class="divider"></div>
-                <p>With over a decade and a half of dedicated experience since 2007, Mr. Olukayode Salaman has established himself as a premier Financial Advisor and Wealth Manager.</p>
+                <p>With over a decade and a half of dedicated experience since 2007, Mr. Olukayode Salaman has established himself as a premier Financial Advisor and Wealth Manager based in Ibadan.</p>
                 <p>His deep-rooted expertise lies in the dynamic Nigerian Stock Exchange (NGX). He has successfully navigated market complexities to deliver robust portfolios for a diverse clientele.</p>
                 <p>Whether you are based in Nigeria or are part of the vibrant Diaspora looking to invest back home safely and profitably, Mr. Salaman provides tailored, strategic insights to secure and grow your financial future.</p>
                 
@@ -85,22 +93,22 @@
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <i class="fas fa-chart-line service-icon"></i>
+                    <i class="fas fa-chart-line service-icon floating-icon"></i>
                     <h4>Nigerian Stocks (NGX)</h4>
                     <p>In-depth analysis, stock selection, and portfolio management on the Nigerian Stock Exchange to maximize your returns.</p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-globe service-icon"></i>
+                    <i class="fas fa-globe service-icon floating-icon" style="animation-delay: 0.5s;"></i>
                     <h4>Diaspora Investment</h4>
                     <p>Secure, transparent, and high-yield investment pathways for Nigerians living abroad wanting to invest in the local economy.</p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-hand-holding-dollar service-icon"></i>
+                    <i class="fas fa-hand-holding-dollar service-icon floating-icon" style="animation-delay: 1s;"></i>
                     <h4>Wealth Management</h4>
                     <p>Holistic strategies for asset allocation, risk management, and long-term wealth preservation across generations.</p>
                 </div>
                 <div class="service-card">
-                    <i class="fas fa-comments-dollar service-icon"></i>
+                    <i class="fas fa-comments-dollar service-icon floating-icon" style="animation-delay: 1.5s;"></i>
                     <h4>Financial Advisory</h4>
                     <p>Personalized consulting to help you make informed decisions on personal finance, retirement planning, and corporate investments.</p>
                 </div>
@@ -159,7 +167,7 @@
                     <div class="inquiry-details">
                         <div class="detail-group">
                             <h4 class="detail-label">Location</h4>
-                            <p class="detail-text">Lagos, Nigeria (Serving clients globally)</p>
+                            <p class="detail-text">Ibadan, Nigeria (Serving clients globally)</p>
                         </div>
                         <div class="detail-group">
                             <h4 class="detail-label">Direct Line & WhatsApp</h4>
@@ -169,6 +177,17 @@
                             </a>
                         </div>
                     </div>
+
+                    <!-- PTA Style Map -->
+                    <a href="https://maps.app.goo.gl/DDcQXzp6EDwxW8Wo6" target="_blank" rel="noreferrer" class="map-link-wrapper" title="Click to view exact location on Google Maps">
+                        <div class="map-overlay-hover">
+                            <span>Open in Google Maps</span>
+                        </div>
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126601.27255106598!2d3.821360098522329!3d7.433246473138834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10398d77ee6ebf8b%3A0xc3f8319696ce22a4!2sOjoo%2C%20Ibadan%2C%20Oyo!5e0!3m2!1sen!2sng!4v1716912345678!5m2!1sen!2sng" 
+                            width="100%" height="100%" style="border: 0; pointer-events: none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map-iframe">
+                        </iframe>
+                    </a>
                 </div>
 
                 <!-- Form -->
@@ -205,7 +224,7 @@
     <footer>
         <div class="container footer-content">
             <div class="footer-logo">
-                <h2>Salaman Solutions</h2>
+                <h2 class="fanciful-logo">Salaman Solutions</h2>
                 <p>Guiding Wealth. Securing Futures.</p>
                 <div class="social-links">
                     <a href="#"><i class="fab fa-linkedin"></i></a>

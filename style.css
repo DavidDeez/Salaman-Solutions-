@@ -131,8 +131,14 @@ header {
 
 .logo h1 {
     margin: 0;
-    font-size: 28px;
     color: var(--primary-color);
+}
+
+.fanciful-logo {
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 42px !important;
+    font-weight: 400 !important;
+    letter-spacing: 1px;
 }
 
 nav ul {
@@ -594,6 +600,107 @@ nav a:hover {
         transform: none;
         animation-timing-function: cubic-bezier(0,0,0.2,1);
     }
+}
+
+/* Map Style */
+.map-link-wrapper {
+    display: block;
+    width: 100%;
+    height: 250px;
+    background-color: #e5e7eb;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    margin-top: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.map-link-wrapper:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+.map-overlay-hover {
+    position: absolute;
+    inset: 0;
+    background: transparent;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-link-wrapper:hover .map-overlay-hover {
+    background: rgba(0, 37, 26, 0.2);
+}
+
+.map-overlay-hover span {
+    background-color: var(--bg-white);
+    color: var(--primary-dark);
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    font-weight: 500;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.map-link-wrapper:hover .map-overlay-hover span {
+    opacity: 1;
+}
+
+.map-iframe {
+    filter: grayscale(100%);
+    opacity: 0.9;
+    transition: filter 0.5s ease, opacity 0.5s ease, transform 0.5s ease;
+}
+
+.map-link-wrapper:hover .map-iframe {
+    filter: grayscale(0%);
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+/* Floating Animations for icons */
+.floating-icon {
+    animation: floatIcon 3s ease-in-out infinite;
+}
+
+@keyframes floatIcon {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Floating Background Icons */
+.floating-bg-icons {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.floating-bg-icons i {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.1);
+    font-size: 4rem;
+    animation: floatRandom 6s ease-in-out infinite;
+}
+
+.float-icon-1 { top: 15%; left: 10%; font-size: 5rem !important; animation-delay: 0s !important; }
+.float-icon-2 { top: 60%; left: 15%; font-size: 3rem !important; animation-delay: 1s !important; }
+.float-icon-3 { top: 25%; right: 15%; font-size: 4.5rem !important; animation-delay: 2s !important; }
+.float-icon-4 { top: 75%; right: 10%; font-size: 6rem !important; animation-delay: 3s !important; }
+.float-icon-5 { top: 40%; left: 50%; font-size: 3.5rem !important; animation-delay: 4s !important; }
+.float-icon-6 { top: 85%; left: 40%; font-size: 4rem !important; animation-delay: 5s !important; }
+
+@keyframes floatRandom {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(10px, -15px) rotate(5deg); }
+    50% { transform: translate(-5px, -25px) rotate(-5deg); }
+    75% { transform: translate(-15px, -10px) rotate(2deg); }
 }
 
 /* Footer */
