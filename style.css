@@ -137,15 +137,14 @@ header {
 .fanciful-logo {
     font-family: 'Playfair Display', serif !important;
     font-style: italic !important;
-    font-size: 46px !important;
-    font-weight: 900 !important;
+    font-size: 32px !important;
+    font-weight: 800 !important;
     letter-spacing: 1px;
     display: inline-block;
     color: var(--primary-color);
     text-shadow: 1px 1px 0 #39796b,
-                 2px 2px 0 #39796b,
-                 3px 3px 0 #00251a,
-                 4px 4px 6px rgba(0,0,0,0.4);
+                 2px 2px 0 #00251a,
+                 3px 3px 5px rgba(0,0,0,0.3);
 }
 
 nav ul {
@@ -324,16 +323,31 @@ nav a:hover {
 .calculator-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
-    background-color: var(--primary-color);
-    border-radius: 12px;
+    gap: 0px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    border-radius: 16px;
     overflow: hidden;
-    color: var(--text-light);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    color: var(--bg-white);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.1);
+    position: relative;
 }
 
 .calc-info {
     padding: 50px;
+    position: relative;
+    z-index: 1;
+}
+.calc-info::after {
+    content: '\f200';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    font-size: 200px;
+    opacity: 0.05;
+    z-index: -1;
 }
 
 .calc-info h3 {
@@ -347,53 +361,65 @@ nav a:hover {
 }
 
 .calc-form-area {
-    background-color: var(--bg-white);
+    background: var(--bg-white);
     padding: 50px;
     color: var(--text-dark);
+    position: relative;
 }
 
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 8px;
-    font-weight: 500;
+    font-weight: 600;
     color: var(--primary-dark);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .form-group input, .form-group select, .form-group textarea {
     width: 100%;
-    padding: 12px 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 15px;
+    border: 2px solid #f1f5f9;
+    border-radius: 8px;
+    background-color: #f8fafc;
     font-family: var(--font-body);
-    font-size: 16px;
+    transition: var(--transition);
 }
-
 .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    border-color: var(--primary-light);
     outline: none;
-    border-color: var(--primary-color);
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(57, 121, 107, 0.1);
 }
 
 .calc-result {
     margin-top: 30px;
-    padding: 20px;
-    background-color: #f0f7f4;
-    border-left: 4px solid var(--primary-color);
-    border-radius: 4px;
+    padding: 25px;
+    background: linear-gradient(135deg, #f0f7f4 0%, #e6f2ee 100%);
+    border-left: 5px solid var(--primary-light);
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
 .calc-result h4 {
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     color: var(--text-muted);
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .calc-result h2 {
-    color: var(--primary-color);
-    font-size: 32px;
+    color: var(--primary-dark);
+    font-size: 36px;
+    font-weight: 900;
     margin-bottom: 0;
+    text-shadow: 1px 1px 0 rgba(0,0,0,0.1);
 }
 
 /* Contact Section (Inquiry Design) */
@@ -971,6 +997,21 @@ body.dark-mode .trust-bar { border-bottom: 1px solid #334155; }
     height: 200px;
     background-size: cover;
     background-position: center;
+    position: relative;
+}
+
+.insight-source {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: var(--accent-color);
+    color: var(--bg-white);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 .insight-content { padding: 25px; }
